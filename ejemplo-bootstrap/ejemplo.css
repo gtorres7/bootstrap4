@@ -1,0 +1,31 @@
+.container-sm{
+    border:1px solid red;
+}
+
+.container-md{
+    border:1px solid greenyellow;
+}
+
+.container-fluid {
+    border: 1px solid blueviolet;
+  }
+
+  .rojo{
+      background-color: crimson;
+  }
+
+  .verde{
+      background-color: darkgreen;
+  }
+  
+  .azul{
+      background-color: blue;
+  }
+
+  .amarillo{
+      background-color: goldenrod;
+  }
+
+  .container{
+    border: 1px solid black;
+  }
