@@ -13,10 +13,10 @@
   <title>platiz hawai</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="57">
 
   <!-- HEADER -->
-  <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav id="header" class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
 
       <a class="navbar-brand" href="#">
@@ -28,22 +28,22 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Conferencia</a>
+          <li class="nav-item ">
+            <a class="nav-link" href="#main">Conferencia</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Oradores</a>
+            <a class="nav-link" href="#speakers">Oradores</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">El lugar y la fecha</a>
+            <a class="nav-link" href="#place-time">El lugar y la fecha</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Conviertete en orador</a>
+            <a class="nav-link" href="#conviertete-en-orador">Conviertete en orador</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-platzi" href="#">Tickets</a>
+            <a class="nav-link text-platzi" href="#" data-toggle="modal" data-target="#modalCompra">Tickets</a>
           </li>
         </ul>
       </div>
@@ -70,14 +70,15 @@
               <div class="col-md-6 offset-md-6 text-center text-md-right">
                 <h1>Platzi Conf Hawaii</h1>
                 <p class="d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ut sint quae laboriosam odio distinctio a officia atque provident 
+                  Ut sint quae laboriosam odio distinctio a officia atque provident
                   maiores fugiat voluptates corrupti, nam aliquid id quos! Inventore eveniet itaque qui?Ea,
-                  nam! Quis, facere, fugit blanditiis minus quo error possimus earum, 
+                  nam! Quis, facere, fugit blanditiis minus quo error possimus earum,
                   non autem hic mollitia adipisci suscipit illo ducimus quam.
                   Iste itaque aliquam quod dolores voluptatum ipsa beatae consectetur quisquam.
                 </p>
                 <a href="#" class="btn btn-outline-light">Quiero ser orador</a>
-                <button type="button" btn="btn btn-platzi">Comprar tickets</button>
+                <button type="button" class="btn btn-platzi" data-toggle="modal" data-target="#modalCompra">Comprar
+                  tickets</button>
               </div>
             </div>
           </div>
@@ -86,9 +87,9 @@
     </div>
   </main>
   <!-- /MAIN -->
-  
+
   <!-- SPEAKERS -->
-  
+
   <section id="speakers" class="mt-4">
     <div class="container">
       <div class="row">
@@ -99,7 +100,7 @@
       </div>
       <div class="row">
         <div class="col-md-4 mb-0 mb-4 d-none d-md-block">
-          <div class="card" >
+          <div class="card">
             <img src="assets/speakers/sacha.jpg" class="card-img-top" alt="sacha">
             <div class="card-body">
               <div class="badges">
@@ -108,13 +109,13 @@
               </div>
               <h5 class="card-title">Sacha</h5>
               <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                 Porro distinctio tenetur perspiciatis adipisci, rerum est hic omnis consequuntur
+                Porro distinctio tenetur perspiciatis adipisci, rerum est hic omnis consequuntur
               </p>
             </div>
           </div>
         </div>
         <div class="col-md-4 mb-0 mb-4 d-none d-lg-block">
-          <div class="card" >
+          <div class="card">
             <img src="assets/speakers/leonidas.jpeg" class="card-img-top" alt="Leonidas">
             <div class="card-body">
               <div class="badges">
@@ -123,13 +124,13 @@
               </div>
               <h5 class="card-title">Leonidas</h5>
               <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                 Porro distinctio tenetur perspiciatis adipisci, rerum est hic omnis consequuntur
+                Porro distinctio tenetur perspiciatis adipisci, rerum est hic omnis consequuntur
               </p>
             </div>
           </div>
         </div>
         <div class="col-md-4 mb-0 mb-4">
-          <div class="card" >
+          <div class="card">
             <img src="assets/speakers/freddy.jpeg" class="card-img-top" alt="Freddy">
             <div class="card-body">
               <div class="badges">
@@ -139,12 +140,12 @@
               </div>
               <h5 class="card-title">Freddy Vega</h5>
               <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                 Porro distinctio tenetur perspiciatis adipisci, rerum est hic omnis consequuntur
+                Porro distinctio tenetur perspiciatis adipisci, rerum est hic omnis consequuntur
               </p>
             </div>
           </div>
         </div>
-        
+
       </div>
     </div>
   </section>
@@ -161,7 +162,7 @@
         <div class="col-12 col-lg-6 pt-4 pb-4">
           <h2>Honolulu - Octubre 2030</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Distinctio aperiam earum unde deserunt veniam porro quo rerum
+            Distinctio aperiam earum unde deserunt veniam porro quo rerum
           </p>
           <a href="https://www.google.com" class="btn btn-outline-light">Conoce mas</a>
         </div>
@@ -175,15 +176,15 @@
     <div class="container">
       <div class="row text-uppercase">
         <div class="col text-center">
-        <small>Convierte en un</small>
-        <h2><abbr data-toggle="tooltip" title="CHINGON">Orador</abbr></h2>
+          <small>Convierte en un</small>
+          <h2><abbr data-toggle="tooltip" title="CHINGON">Orador</abbr></h2>
         </div>
       </div>
       <div class="row">
         <div class="col text-center">
           <abbr data-toggle="tooltip" title="CHARLAS DE 5 MINUTOS">CHARLA IGNITE</abbr>
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
-           Aut inventore ratione non error esse dicta quasi
+          Aut inventore ratione non error esse dicta quasi
         </div>
       </div>
       <div class="row">
@@ -246,6 +247,49 @@
     </div>
   </footer>
   <!-- /FOOTER -->
+
+  <!-- MODAL -->
+
+
+
+  <div class="modal fade" id="modalCompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Comprar Tickets</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="form-row">
+              <div class="form-group col">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                    aria-describedby="basic-addon1">
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="alert alert-warning" role="alert">
+            Recibiras un correo al comprar
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-platzi">Comprar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /MODAL -->
+
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -257,7 +301,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>
